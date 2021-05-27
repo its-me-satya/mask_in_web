@@ -1,0 +1,62 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+$bg:#5C4E5F;
+$container-primary:#ffffff;
+$container-secondary:#e5e5e5;
+body {
+    background-color: $bg;
+}
+
+.container-fluid {
+    margin-top: 1rem;
+    width: 98%;
+    border-radius: 13px;
+    .logo {
+        font-family: 'Baloo 2', cursive;
+        font-weight: 700;
+    }
+}
+
+.bg-main {
+    background-color: $bg;
+    height: max-content;
+}
+
+.navbar-nav {
+    font-family: 'Baloo 2', cursive;
+    font-weight: 600;
+    font-size: large;
+}
+
+.nav-link {
+    margin-right: 1rem;
+}
+
+.catageories {
+    padding-top: 3rem;
+    height: 60%;
+    text-align: center;
+    padding-bottom: 10rem;
+}
+
+.events {
+    position: relative;
+    top: 50%;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 6px;
+    background-color: #e5e5e5;
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.25);
+}
+
+.events:hover {
+    border: $bg solid 2px;
+    cursor: pointer;
+}
+
+.m-1 {
+    color: #5C4E5F;
+}
+
+.design:hover {
+    fill: #fff;
+}
