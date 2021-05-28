@@ -12,33 +12,33 @@ $white:#ffffff;
 }
 
 .path {
-    stroke: #361643;
-    stroke-width: 5;
+    fill: #ffffff;
     animation-name: change;
-    animation-duration: 5s;
-    -webkit-animation: change 5s infinite;
+    animation-duration: 2s;
+    -webkit-animation: change 2s infinite;
     /* Safari 4+ */
-    -moz-animation: change 5s infinite;
+    -moz-animation: change 2s infinite;
     /* Fx 5+ */
-    -o-animation: change 5s infinite;
+    -o-animation: change 2s infinite;
     /* Opera 12+ */
-    animation: change 5s infinite;
+    animation: change 2s infinite;
     /* IE 10+, Fx 29+ */
 }
 
 @keyframes change {
-    20% {
-        stroke: #361643;
+    0% {
+        fill: #ffffff;
     }
     50% {
-        stroke: #F9784F;
+        fill: #F9784F;
     }
     100% {
-        stroke: #129ECB;
+        fill: #129ECB;
     }
 }
 
-h1 {
+h1,
+h5 {
     position: relative;
     top: 1rem;
     margin-bottom: 2rem;
@@ -71,13 +71,15 @@ h1 {
 }
 
 .catageories {
-    padding-top: 3rem;
-    height: 60%;
+    padding-top: 1rem;
+    height: 50%;
     text-align: center;
-    padding-bottom: 10rem;
+    padding-bottom: 8rem;
 }
 
 .events {
+    margin: 0 auto;
+    text-align: center;
     position: relative;
     top: 50%;
     width: 5rem;
@@ -88,6 +90,22 @@ h1 {
 }
 
 .events:hover {
+    border: $bg solid 2px;
+    cursor: pointer;
+}
+
+.events-mob {
+    position: relative;
+    margin-bottom: 3rem;
+    top: 50%;
+    width: 90%;
+    height: 5rem;
+    border-radius: 6px;
+    background-color: #e5e5e5;
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.25);
+}
+
+.events-mob:hover {
     border: $bg solid 2px;
     cursor: pointer;
 }
